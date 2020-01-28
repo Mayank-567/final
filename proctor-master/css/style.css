@@ -1,0 +1,117 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+.logo
+{
+    width: 140px;
+    height:120px;
+    
+    position:relative;
+    left: 50%;
+    margin-left:-70px;
+    
+
+    
+}
+.login
+{
+    width:300px;
+    height:auto;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    /* border:solid rgb(172, 167, 167); */
+    margin-left:-165px;
+    margin-top:-300px;
+    padding: 20px 15px 20px 15px ;
+    border-radius:25px;
+    box-shadow: 0  10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+   
+h1
+{
+    color:rgb(146, 144, 144);
+    font-weight: 400;
+    text-align:center;
+    
+    position:relative;
+    top:-20px;
+}
+#username,#password
+{
+    
+    width:300px;
+    height:30px;
+    /* border-radius:5px; */
+    margin-bottom:30px;
+    margin-top:10px;
+    outline:none;
+    transition-duration: 0.2ms;
+   
+
+    
+}
+
+input[type=text],input[type=password]{
+    box-sizing: border-box;
+    padding: 16px;
+    color:black;
+    border:none;
+    border-bottom:black solid 2px;
+}
+.button {
+        /* background-color:#4CAF50;   */
+        background-color: #272727;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+        border-radius:10px;
+        width:300px;
+        
+        
+        
+}
+
+.button:hover
+{
+    background-color:transparent;
+    border:solid 2px black;
+    color:black;
+    
+    box-shadow: 0  10px 20px rgba(0,0,0,0.12)
+
+}
+#username:focus,#password:focus{
+    
+    border-bottom:#272727 solid 2px;
+    box-shadow: 0  10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+}
+#username:hover,#password:hover{
+    font-weight: 600;
+}
+a{
+text-decoration:none;
+transition:0.2 s;
+padding:2px 2px 0 0;
+color:#272727;
+
+
+}
+a:hover{
+    font-weight:600;
+}

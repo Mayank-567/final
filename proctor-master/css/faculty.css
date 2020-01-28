@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0;
+    box-sizing: border-box;
+  }
+  body{
+    width:90%;
+    margin:auto;
+  }
+main{
+    position: relative;
+    bottom:-3em;
+    font-family: 'Poppins', sans-serif;
+    margin:1em;
+    /* z-index:-23; */
+  }  
+section{
+    padding:2em;
+    margin:2em 0 2em 0 ;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 10em;
+
+  }
+
+.arc-image{
+    /* min-height: 10em;
+    /* border: 10em; */
+    /* min-width: 7em; */ 
+    height: 10em;
+    
+    width:10em;
+    float: right;
+    border-radius: 1em;
+     
+}
+
+.links{
+  border: 10em;
+  ;
+}

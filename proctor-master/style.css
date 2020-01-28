@@ -1,0 +1,234 @@
+@import "allpages.css";
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* background: url(jd.jpeg) no-repeat; */
+}
+
+body{
+    width:100%;
+    overflow: hidden;
+}
+/* For the navbar */
+header{
+    top:0px;  
+    width:100%;
+    position: fixed;
+    margin-bottom:2em;
+  }
+  nav{
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    justify-content: space-around;
+    width:90%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    max-height:55px;
+    background: white;
+   
+  }
+  nav .logo
+  {
+    font-size: 40px;
+    font-family: 'Luckiest Guy', cursive ;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    
+   
+  }
+  
+  .nav-links{
+    display:flex;
+    background-color: #dddddd;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    width:90%;
+    justify-content: space-around;
+   }
+  a{
+    display: block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .3s;
+    
+   
+  }
+  nav li .nav-link:hover:not(.current){
+    background: #111;
+    color:#dddddd;
+  }
+  .current{
+    border-bottom:black 2px solid;
+  
+  }
+  
+.card{
+    
+    /* border:solid 2px rgb(100, 95, 95); */
+    padding: .2em;
+    width: fit-content;
+}
+.main-card{
+    
+    /* background: lightblue; */
+    /* padding:1em; */
+    margin:1em;
+    height: 55vh;
+    width:45vh;
+    box-shadow: 0  10px 6px 7px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition:1s ease-out transform;
+    position: relative;
+}
+.front
+{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    /* justify-items: center; */
+    /* background: url(jd.jpeg) no-repeat; */
+    /* background: red; */
+    height:55vh;
+    width:45vh;
+    box-sizing: border-box;
+    margin:0;
+    transition:.5s ease-out opacity;
+    z-index: 12;
+    
+}
+h3{
+
+    padding: .2em .5em;
+    /* color:white; */
+    font-weight:00;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 1px 3px 5px rgb(0, 0, 0,.49);
+}
+.back{
+    
+    position: absolute;
+    padding:1em;
+    transform:rotateY(180deg) translateY(-55vh);
+    transition: opacity .5s .2s;
+    opacity: 0;
+    z-index:2000000;
+    background: #fff;
+
+}
+img{
+    width:inherit;
+    padding: .1em;
+   
+}
+.card:hover .main-card{
+    transform:rotateY(180deg);
+    /* background:blue; */
+}
+.card:hover .front{
+    opacity: 0;
+    transition:.5s ease-out opacity .25s;
+}
+
+.card:hover .back{
+    opacity: 1;
+}
+.links{
+    display:flex;
+    flex-direction: column;
+    /* padding:1em .1em; */
+    /* background: red; */
+    width: fit-content;
+}
+i{
+
+    padding: .5em 0;
+    padding-right: .5em;
+    color:rgb(87, 83, 83);
+    transform: translateY(-3px);
+}
+a{
+    /* position: absolute; */
+    text-decoration: none;
+    color:rgb(87, 83, 83);
+   
+
+}
+ a:hover{
+    color: black;
+    width: fit-content;
+}
+/* h1::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 2px;
+    /* margin:auto; 
+    cursor:pointer;
+    transition: 1s ease-in-out;
+    /* transform: translateX(-330px); 
+    background:black;
+    
+} */
+h1{
+    /* background: red; */
+    width: inherit;
+    margin:0;
+    /* background: red; */
+    text-align: center;
+    position: relative;
+    /* left:50%; */
+    
+}
+/* h1:hover::after {
+    background: rgb(0, 0, 0);
+    width:0;
+    overflow: hidden;
+    transform: translateX(350px);
+    /* background-color:red; 
+    overflow:hidden;
+    
+} */
+/* @keyframes topple
+{
+    0%{
+        transform: rotate(25deg);
+    }
+} */
+section{
+    width:100%;
+    box-sizing: border-box;
+    position: relative;
+    /* background: red; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:0;
+}
+.bg-text{
+    /* display: flex; */
+   text-align: center;
+   text-transform: capitalize;
+   /* z-index:-20; */
+   position: absolute;
+   font-size:268px;
+   letter-spacing: 3em;
+   font-family: oswald;
+   display:inline-block;
+   opacity:0;
+   color: rgba(0, 0, 0, 0.493);
+   transition: all 1.5s ;
+   pointer-events: none;
+}
+  section:hover .bg-text{
+    letter-spacing: 0;
+    opacity:1;
+} 
+
+.sect{
+    margin: auto;
+}

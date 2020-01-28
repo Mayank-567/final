@@ -1,0 +1,249 @@
+/* @import url("CSS/allpages.css"); */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+body{
+    width:100vw;
+    height:100vh;
+    overflow-x:hidden;
+}
+header{
+    top:0px;  
+    width:100%;
+    position: fixed;
+    margin-bottom:2em;
+  }
+  nav{
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    justify-content: space-around;
+    width:90%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    max-height:55px;
+    background: white;
+   
+  }
+  nav .logo
+  {
+    font-size: 40px;
+    font-family: 'Luckiest Guy', cursive ;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    
+   
+  }
+  
+  .nav-links{
+    display:flex;
+    background-color: #dddddd;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    width:90%;
+    justify-content: space-around;
+   }
+  a{
+    display: block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .3s;
+    
+   
+  }
+  nav li .nav-link:hover:not(.current){
+    background: #111;
+    color:#dddddd;
+  }
+  .current{
+    border-bottom:black 2px solid;
+  
+  }
+  
+  
+  main{
+    /* position: relative; */
+    bottom:-3em;
+    font-family: 'Poppins', sans-serif;
+    margin:1em;
+    z-index:-23;
+  }  
+  /* section{
+    padding:2em;
+    margin:2em 0 2em 0 ;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  } */
+  .burger{
+    cursor:pointer;
+    align-items: center;
+    margin:auto;
+    display: none;
+  
+  
+  }
+  .burger div
+  {
+    margin:5px;
+    width: 25px;
+    height:3px;
+    background: #111;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+    
+    
+  }
+  .burger.active{
+    position: relative;
+    right:63px; 
+  }
+    
+  
+  .burger.active .line1{
+    transform: rotate(45deg);
+    position:relative;
+    bottom:-4px;
+    width:13px;
+    right:-14px;
+  }
+  .burger.active .line3{
+    transform: rotate(-45deg);
+    position:relative;
+    top:-4px;
+    width:13px;
+    right:-14px;
+  }
+
+nav .nav-links.mobile{
+  display:inline-block;
+  flex-direction: column ;
+  position: relative;;
+  top:8vh;
+  background:white;
+
+  height:100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+@media screen and (max-width:946px){
+
+.burger{
+  display:block;
+      
+}
+.nav-links{
+  display:none;
+}
+.mains{
+  flex-direction:column;
+}
+.card{
+  margin-top:5em;
+  background:red;
+}
+}
+      
+  .nav-links.mobile .current{
+    background: #111;
+    color:#dddddd;
+  }
+.text{
+    width: 95%;
+    /* padding: 2em; */
+    margin:2em;
+    text-decoration-line: underline;
+    margin-top: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(202, 202, 202); */
+}
+.mains{
+  
+    width:100%;
+    height: auto;
+    margin: 2em 1em 0 1em;
+    padding: 2em;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.card{
+    height: auto;
+    width: 20em;
+    background-color:#eeeeee;
+    /* min-height: 28em; */
+    margin: 2em;
+    box-shadow:5px 5px 20px rgba(0,0,0,0.3);
+    /* margin-top: 10em; */
+    /* padding: ;
+    padding-left: 5em; */
+    /* display: flex;
+    /* align-items: center;
+    justify-content:center;  */ */
+}
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    /* height: 18em; */
+    /* margin: 2em ; */
+    /* width: 20em; */
+    /* background-color:gray; */
+    background-color: rgb(202, 202, 202);
+    /* font-size: ; */
+    /* background-color: rgb(202, 202, 202); */
+}
+.des{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 2em; */
+    padding: 1em;
+}
+
+/* .card.desc{
+    float: left;
+} */
+.jayes{
+    margin-top: -5em;
+    margin-left: 5em;
+    height:10em;
+    width: 10em;
+    border-radius: 50%;
+    
+}
+/* .image{
+    background-color: green;
+    height: 26em;
+    width:inherit;
+} */
+/* .desc{
+    height: 10em;
+    width:10em;
+    background-color:wheat;
+    
+} */
+/* a{
+    ;
+    
+} */
+#i{
+    padding:0em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin:1em; */
+    /* height: 2em; */
+    font-size: 2em;
+    
+    /* display: flex; */
+}
