@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+*::selection{
+    color:red
+}
+body{
+    background:#6d6d6d;
+    height:100vh;
+}
+section{
+    width:90%;
+    height:fit-content;
+    margin:1.5em auto;
+    padding:1.5em;
+    font-family:poppins;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color:#fefefe;
+}
+.info{
+    width:90%;
+    margin:1em auto;
+    
+    
+}
+.faculty_name{
+    padding:0.3em;
+    padding-bottom: 0.1em;
+    font-family: poppins;
+    /* font-size:1.2rem; */
+    /* font-weight:350; */
+    margin-bottom:.5em;
+}
+.subject{
+    padding:0.2em;
+    font-family: poppins;
+    margin: 0.5;
+}
+
+/* Table */
+.attendance{
+    display:flex;
+    flex-direction: column;
+    /* width:fit-content */
+    justify-content: space-between;
+    /* background-color: #fd8b0b; */
+}
+.attendance-table{
+    border-collapse:collapse;
+    width:90%;
+    margin: 0 auto;
+}
+th{
+    background-color:#fd8b0b;
+    color:black;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th:first-of-type,td:first-of-type{
+    /* background-color: red; */
+    width:20%;
+}
+th:last-of-type,td:last-of-type{
+    /* background-color: red; */
+    width:20%;
+}
+tr:nth-child(even){
+    background:white;
+    transition:.1s;
+}
+tr:nth-child(odd){
+    background:#ededed;
+    transition:.1s;
+}
+
+tr:hover{
+    /* background:#fd8b0b5c; */
+    background:#dedede;
+}
+input[type=radio]{
+    margin-left:2em;
+    
+}
+input[type=submit],input[type=button]{
+    width:7em;
+    font-weight:bold;
+    height:3em;
+    font-family:poppins;
+    /* background:#fd8b0b; */
+    border:0;
+    outline:none;
+    margin-top:1em;
+    margin-right:6em;
+    padding:.6em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+
+}
+input[type=submit]
+{
+    background:#fd8b0b;
+}
+
+input[type=submit]:hover
+{
+    background:transparent;
+    border:2px #fd8b0b solid;
+}
+input[type=button]
+{
+    /* color:#a15804; */
+    border:2px #fd8b0b solid;
+}
+input[type=button]:hover
+{
+    /* color:#a15804; */
+    border:2px #fd8b0b solid;
+    background-color: #fd8b0b;
+}
